@@ -13,8 +13,34 @@
 	color: white;
 }
 
-.centertext {
-	font-size: 0;
+@media (max-width: 500px) {
+	/* some CSS for small resolution */
+	.centertext {
+		font-size: inherit;
+		font-weight: 500;
+		color: white;
+		font-family: Roboto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	}
+}
+
+@media (max-height: 500px) {
+	/* some CSS for small resolution */
+	.centertext {
+		font-size: inherit;
+		font-weight: 500;
+		color: white;
+		font-family: Roboto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	}
 }
 
 #myClickBlock:hover .centertext {
