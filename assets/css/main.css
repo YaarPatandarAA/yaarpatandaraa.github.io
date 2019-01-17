@@ -8,7 +8,11 @@
 */
 
 .thebox {
-	position: initial;
+	position: inherit;
+	text-align: center;
+	color: white;
+}
+.thebox2 {
 	text-align: center;
 	color: white;
 }
