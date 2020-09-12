@@ -11,6 +11,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.proj_image_container {
+				position: relative !important;
+				width: 50% !important;
+			}
+
+			.project_image {
+				opacity: 1 !important;
+				display: block !important;
+				width: 100% !important;
+				height: auto !important;
+				transition: .5s ease !important;
+				backface-visibility: hidden !important;
+			}
+
+			.project_middle {
+				transition: .5s ease !important;
+				opacity: 0 !important;
+				position: absolute !important;
+				top: 50% !important;
+				left: 50% !important;
+				transform: translate(-50%, -50%) !important;
+				-ms-transform: translate(-50%, -50%) !important;
+			}
+
+			.proj_image_container:hover .project_image {
+				opacity: 0.3 !important;
+			}
+
+			.proj_image_container:hover .project_middle {
+				opacity: 1 !important;
+			}
+
+			.project_text {
+				color: white !important;
+				font-size: 26px !important;
+				padding: 16px 32px !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -49,7 +88,7 @@
 						<!-- Intro -->
 							<article id="about">
 								<h2 class="major">About Me</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image main"><img src="images/me.jpg" alt="" align="left" style="width: 50%; padding-right: 20px"/></span>
 								<p>I am a techie 💾 by heart, I love anything and all things ⚙️ tech. I love to tinker 🛠 with technology and
 									📚🤓 learn more. I graduated from California State University, Sacramento in May of 2018 with a Bachelor of Science in 💻 Computer
 									Engineering 🖥 and have taken a few <a href="#education">online software 💽 courses</a>.
@@ -59,7 +98,7 @@
 									<a href="#projects">projects</a> and <a href="#work">technical work 👨🏼‍💻 experience</a>.
 									<br>
 									<br>
-									Feel free to <a href="#contact">contact me</a> to learn more about me, thanks for visiting hope you liked this site 😉</p>
+									Feel free to <a href="#contact">contact me</a> to learn more, thanks for visiting hope you liked this site 😉</p>
 							</article>
 
 						<!-- Work -->
@@ -92,25 +131,171 @@
 									</ul>
 								</blockquote>
 							</article>
+
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">👨🏼‍💻 Projects</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>🚧 Under Construction 🚧</p>
+								<div class="proj_image_container">
+									<img src="images/me.jpg" alt="Avatar" class="project_image" style="width:100%">
+									<div class="project_middle">
+										<div class="project_text">John Doe</div>
+									</div>
+								</div>
 							</article>
 						
 						<!-- Education -->
 							<article id="education">
 								<h2 class="major">👨🏼‍🏫 Education</h2>
-								<p>🚧 Under Construction 🚧</p>
-								<h2 class="major">🎓 Online Courses</h2>
-								<p>🚧 Under Construction 🚧</p>
+								<h3><img src="images/ssLogo.png" height="30em"> Computer Engineering, B.Sc.</h3>
+								<em style="padding-left:3em;">California State University, Sacramento - May 2018</em>
+								<li style="padding-left:3em; padding-bottom: 1rem; !important;">Graduate with a GPA of 3.5</li>
+								<h3><img src="images/ycLogo.png" height="30em"> Natural Science, A.Sc. </h3>
+								<em style="padding-left:3em;">Yuba Community College, Marysville - May 2015</em>	
+								<h2 class="major" style="padding-top: 1rem; !important; margin: 0 0 1rem 0 !important;">🎓 Online Courses</h2>
+								<ul>
+									<li>
+										<a href="https://www.udacity.com/course/advanced-android-app-development--ud855" target="_blank"> 
+											Advanced Android App Development by Google
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udacity.com/course/build-native-mobile-apps-with-flutter--ud905" target="_blank"> 
+											Build Native Mobile Apps with Flutter
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udemy.com/js-algorithms-and-data-structures-masterclass/" target="_blank"> 
+											JavaScript Algorithms and Data Structures Masterclass
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udemy.com/ios-12-app-development-bootcamp/" target="_blank"> 
+											iOS 12 & Swift - The Complete iOS App Development Bootcamp
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udemy.com/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" target="_blank"> 
+											The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udemy.com/the-web-developer-bootcamp/" target="_blank"> 
+											The Web Developer Bootcamp
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udemy.com/the-advanced-web-developer-bootcamp/" target="_blank"> 
+											The Advanced Web Developer Bootcamp
+										</a>
+									</li>
+									<li>
+										<a href="https://www.udemy.com/data-science-and-machine-learning-with-python-hands-on/" target="_blank"> 
+											Machine Learning, Data Science and Deep Learning with Python
+										</a>
+									</li>
+								</ul>
 							</article>
 
 						<!-- Skills -->
 							<article id="skills">
 								<h2 class="major" style="font-size: 1em !important;">🔧 My Skills and Experiances</h2>
-								<p>🚧 Under Construction 🚧</p>
+								<div style="display: flex;">
+									<div style="flex: 33%;">
+										<h4>Soft Skills</h4>
+										<ul>
+											<li>Quick Learner</li>
+											<li>Teamwork</li>
+											<li>Communicative</li>
+											<li>Adaptability</li>
+											<li>Leadership</li>
+											<li>Conflict Resolution</li>
+										</ul>
+									</div>
+									<div style="flex: 33%;">
+										<h4>Version Control (git)</h4>
+										<ul>
+											<li>GitHub</li>
+											<li>Bitbucket</li>
+											<li>Gitlab</li>
+										</ul>
+									</div>
+									<div style="flex: 33%;">
+										<h4>IDE Experience</h4>
+										<ul>
+											<li>VS Code</li>
+											<li>Android Studio</li>
+											<li>Xcode</li>
+											<li>Visual Studio '19</li>
+										</ul>
+									</div>
+								</div>
+								<div style="display: flex;">
+									<div style="flex: 33%;">
+										<h4>OS Knowledge</h4>
+										<ul>
+											<li>macOS</li>
+											<li>Windows</li>
+											<li>Linux</li>
+											<li>Android</li>
+											<li>iOS</li>
+										</ul>
+									</div>
+									<div style="flex: 66%;">
+										<h4>Programming</h4>
+										<div style="display: flex">
+											<div style="flex: 50%;">
+												<ul>
+													<li>Python</li>
+													<li>Ruby on Rails</li>
+													<li>JavaScript</li>
+													<li>Java</li>
+													<li>C++</li>
+													<li>C</li>
+												</ul>
+											</div>
+											<div style="flex: 50%;">
+												<ul>
+													<li>C#</li>
+													<li>REST</li>
+													<li>Django</li>
+													<li>Blazor</li>
+													<li>MySQL</li>
+													<li>HTML5</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h4>Familiar</h4>
+								<div style="display: flex;">
+									<div style="flex: 33%;">
+										<ul>
+											<li>.NET Core</li>
+											<li>Swift</li>
+											<li>NodeJS</li>
+											<li>Angular2+</li>
+											<li>Elasticsearch</li>
+										</ul>
+									</div>
+									<div style="flex: 33%;">
+										<ul>
+											<li>CSS</li>
+											<li>Bootstrap 4</li>
+											<li>ASP.NET</li>
+											<li>jQuery</li>
+											<li>ExpressJS</li>
+										</ul>
+									</div>
+									<div style="flex: 33%;">
+										<ul>	
+											<li>VueJS</li>
+											<li>Verilog</li>
+											<li>VHDL</li>
+											<li>Eclipse</li>
+											<li>MongoDB</li>
+										</ul>
+									</div>
+								</div>
 							</article>
 
 						<!-- Contact -->
